@@ -31,6 +31,12 @@ console.log(nuevoArray);
 
 var numeritos = [10, 40, 30, 20, 15, 5];
 
+numeritos.sort(function(a, b) {
+  return a - b;
+});
+
+console.log("Arreglo ordenado de menor a mayor:", numeritos);
+
 var numeritoMayor = Math.max(...numeritos);
 var numeritoMenor = Math.min(...numeritos);
 
